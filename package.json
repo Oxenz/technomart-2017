@@ -1,0 +1,16 @@
+{
+  "name": "technomart",
+  "version": "1.0.0",
+  "description": "preprocessor 'stylus' + js 'gulp'",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "evgenz",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.18.12",
+    "gulp": "^3.9.1",
+    "gulp-stylus": "^2.6.0"
+  }
+}
