@@ -1,15 +1,19 @@
-# base
+# [ base ]
+
 node_modules/
 bower_components/
 Thumbs.db
 .DS_Store
 prepros.cfg
 
-# main
+# [ main ]
+
 stylus/
 build/
+$ource/
 
-# other
+# [ other ]
+
 *.log
 *.sublime*
 *.map

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang='en'>
+<html lang='ru'>
 <head>
 	<meta charset='UTF-8'>
 	<title>Index market</title>
@@ -12,7 +12,7 @@
 		<h3 class='seo-h3-nav' >Это важное техническое меню пользователя</h3>
 			<div class='center cf'>
 				<ul>
-					<li><a href='#' class='logo logo-header'>Техномарт</a></li>
+					<li><a class='logo logo-header logo-index'>Техномарт</a></li>
 					<li>
 						<form>
 							<input id='i-search' class='input-search' type='text' name='header-search' placeholder='Поиск:'>
@@ -39,7 +39,7 @@
 					</h1>
 				</div>
 				<div class='header-contact'>
-					<span title='Нажмите ctrl-c для быстрого копирования'>+7 (812) 555-05-55</span>
+					<a href='tel:+78125550555' title='Для копирования нажмите правую кнопку мыши "Копировать ссылку"'>+7 (812) 555-05-55</a>
 					<p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
 				</div>
 				<div class='personal-account'>
@@ -63,7 +63,7 @@
 				<ul>
 					<li><a href='#'>Главная</a></li>
 					<li><a href='#'>Компания</a></li>
-					<li><a href='#'>Каталог</a></li>
+					<li><a href='/catalog.html'>Каталог</a></li>
 					<li><a href='#'>Новости</a></li>
 					<li><a href='#'>Спецпредложения</a></li>
 					<li><a href='#'>Доставка</a></li>
@@ -226,28 +226,28 @@
 			<div class='brends cf'>
 				<ul>
 					<li>
-						<a class='brand' href='#'><img src='img/brends/AEG.jpg' width='151px' height='96px' alt='Фирма AEG'></a>
+						<a class='brand' href='#'><img src='img/brends/AEG.jpg' width='151' height='96' alt='Фирма AEG'></a>
 					</li>
 					<li>
-						<a class='brand' href='#'><img src='img/brends/bosch.jpg' width='126px' height='37px' alt='Фирма Bosch'></a>
+						<a class='brand' href='#'><img src='img/brends/bosch.jpg' width='126' height='37' alt='Фирма Bosch'></a>
 					</li>
 					<li>
-						<a class='brand' href='#'><img src='img/brends/DeWALT.jpg' width='146px' height='44px' alt='Фирма DeWALT'></a>
+						<a class='brand' href='#'><img src='img/brends/DeWALT.jpg' width='146' height='44' alt='Фирма DeWALT'></a>
 					</li>
 					<li>
-						<a class='brand' href='#'><img src='img/brends/Hitachi.jpg' width='169px' height='31px' alt='Фирма Hitachi'></a>
+						<a class='brand' href='#'><img src='img/brends/Hitachi.jpg' width='169' height='31' alt='Фирма Hitachi'></a>
 					</li>
 					<li>
-						<a class='brand' href='#'><img src='img/brends/LG.jpg' width='127px' height='73px' alt='Фирма LG'></a>
+						<a class='brand' href='#'><img src='img/brends/LG.jpg' width='127' height='73' alt='Фирма LG'></a>
 					</li>
 					<li>
-						<a class='brand' href='#'><img src='img/brends/Makita.jpg' width='123px' height='40px' alt='Фирма Makita'></a>
+						<a class='brand' href='#'><img src='img/brends/Makita.jpg' width='123' height='40' alt='Фирма Makita'></a>
 					</li>
 					<li>
-						<a class='brand' href='#'><img src='img/brends/Metabo.jpg' width='204px' height='69px' alt='Фирма Metabo'></a>
+						<a class='brand' href='#'><img src='img/brends/Metabo.jpg' width='204' height='69' alt='Фирма Metabo'></a>
 					</li>
 					<li>
-						<a class='brand' href='#'><img src='img/brends/Interskol.jpg' width='200px' height='88px' alt='Фирма Interskol'></a>
+						<a class='brand' href='#'><img src='img/brends/Interskol.jpg' width='200' height='88' alt='Фирма Interskol'></a>
 					</li>
 				</ul>
 			</div> <!-- end-brends -->
@@ -328,12 +328,7 @@
 					Вы можете забрать товар сами,<br>
 					заехав в наш офис:
 				</p>
-				<div class='static-map'>
-				<a class='EMPTY_MAP' href='#'>
-					<img src='img/no_interactive-map.jpg' width='300px' height='158px' alt='Карта где мы находимся Большая Конюшенная ул., 19' title='Перейти на интерактивную карту yandex'>
-				</a>
-				<!-- <iframe src=""  frameborder="0"></iframe> -->
-				</div>
+				<div id='map-canvas' class='map-mini-callback'></div>
 				<a class='btn btn-location btn-active' href='/notjsfeedback.html'>Заблудились? Напишите нам!</a>
 			</div>
 		</section> <!-- end-store-information -->
@@ -343,7 +338,7 @@
 		<div class='footer-top'>
 			<div class='center cf'>
 				<div class='footer-top-l'>
-					<a href='#' class='logo logo-footer'>Техномарт</a>
+					<a href='/' class='logo logo-footer'>Техномарт</a>
 					<p>г. Санкт-Петербург,<br> ул. Б. Конюшенная, д. 19/8<br> +7 (812) 555-05-55</p>
 				</div>
 				<div class='footer-top-r'>
@@ -386,28 +381,47 @@
 	</footer>
 
 	<div class='popup-feedback'>
-		<button class='modal-close' type='button' title='Закрыть'></button>
+		<button class='modal-close close-1' type='button' title='Закрыть'></button>
 		<form class='popup-form' method='post' action='https://echo.htmlacademy.ru'>
 			<div class='form-top'>
 				<div class='top-lr-wrapper cf'>
 					<div class='form-top-l'>
 						<label for='p-your-name'>Ваше имя:</label><br>
-						<input id='p-your-name' type='text' name='login' placeholder='Представьтесь, пожалуйста' />
+						<input id='p-your-name' type='text' name='feedback-login' placeholder='Представьтесь, пожалуйста' />
 					</div>
 					<div class='form-top-r'>
 						<label for='p-your-email'>Ваш e-mail</label><br>
-						<input id='p-your-email' type='text' name='email' placeholder='Для отправки ответа' />
+						<input id='p-your-email' type='text' name='feedback-email' placeholder='Для отправки ответа' />
 					</div>
 				</div>
 				<label for='p-text-mail'>Текст письма:</label><br>
-				<textarea id='p-text-mail' name='' cols='58px' rows='5' placeholder='В свободой форме'></textarea>
+				<textarea id='p-text-mail' name='feedback-textarea' cols='58' rows='5' placeholder='В свободой форме'></textarea>
 			</div>
 			<div class='form-bottom'>
 				<button class='btn btn-send btn-active' type='submit'>Отправить</button>
 			</div>
 		</form>
-	</div> <!-- end-popup-feedback -->
+	</div>
+
+	<div class='popup-additem'>
+		<button class='modal-close close-2' type='button' title='Закрыть'></button>
+		<div class='additem-top'>
+			<p class='popup-attention'>Товар добавлен в корзину!</p>
+		</div>
+		<div class='additem-bottom'>
+			<button class='btn-additem btn-additem-order btn-active' type='button'>Оформить заказ</button>
+			<button class='btn-additem btn-additem-continue' type='button'>Продолжить покупки</button>
+		</div>
+	</div>
+
+	<div class='popup-map'>
+		<button class='modal-close close-3' type='button' title='Закрыть'></button>
+		<div id='map-full' class='map-full-callback'></div>
+	</div>
+
 	<div class='modal-overlay'></div>
 	<script src="js/index.js"></script>
+	<script src='https://maps.googleapis.com/maps/api/js?key=AIzaSyA0Eq0jh3tH7GS2EtxDp7fI46i3_bWronU&callback=initMap' async defer></script>
+
 </body>
 </html>
