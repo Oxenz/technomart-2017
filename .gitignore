@@ -11,6 +11,7 @@ prepros.cfg
 stylus/
 build/
 $ource/
+*.css
 
 # [ other ]
 
